@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Maison Stackly - High Jewellery &amp; Haute Horlogerie | Mayfair London</title>
+  <meta name="description" content="Maison Stackly Fine Jewellery on New Bond Street, London. Handcrafted natural diamond solitaires, royal tiaras, untreated gemstones, and bespoke commissions.">
+
+  <!-- Favicon: Official Stackly Logo -->
+  <link rel="icon" type="image/webp" href="assets/images/logoStackly.webp">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome 6.5.2 (Latest Social Icons with X/Twitter) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Master Stylesheet (Main styles and Home Page sections) -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body class="loading-active">
+
+  <!-- ===================================================================
+       PRELOADER (Strict 2-Second Display with Rotating Diamond Ring)
+       =================================================================== -->
+  <div id="global-preloader">
+    <div class="preloader-gem-wrapper">
+      <div class="preloader-ring-outer"></div>
+      <div class="preloader-ring-inner"></div>
+      <i class="fa-solid fa-gem preloader-sparkle-center"></i>
+    </div>
+    <div class="preloader-brand-title">Maison Stackly</div>
+    <div class="preloader-subtitle">Mayfair &bull; London</div>
+  </div>
+
+  <!-- Dynamic Header Component -->
+  <div id="header-placeholder"></div>
+
+  <main>
+    <!-- ===================================================================
+         SECTION 1: HERO SECTION (WITH THREE.JS 3D PARTICLES)
+         =================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- 3D Three.js Canvas -->
+      <canvas id="threejs-canvas"></canvas>
+      <div class="hero-glow-orb"></div>
+
+      <div class="container position-relative z-2">
+        <div class="row align-items-center g-5">
+          
+          <!-- Hero Text Column -->
+          <div class="col-12 col-lg-7" data-aos="fade-right" data-aos-duration="1000">
+            <div class="hero-kicker-tag">
+              <i class="fa-solid fa-crown text-gold"></i>
+              <span>High Jewellery &bull; New Bond Street, London</span>
+            </div>
+
+            <h1 class="hero-headline text-white">
+              Timeless Elegance,<br>
+              <span class="highlight-gold">Crafted For Eternity.</span>
+            </h1>
+
+            <p class="hero-lead">
+              Purveyors of rare conflict-free natural diamonds, untreated Colombian emeralds, and bespoke royal commissions. Hand-forged in our Mayfair atelier since 1888.
+            </p>
+
+            <div class="hero-btn-group d-flex flex-wrap align-items-center gap-3">
+              <a href="collections.html" class="btn btn-gold">
+                <span>EXPLORE COLLECTIONS</span>
+                <i class="fa-solid fa-arrow-right ms-2"></i>
+              </a>
+              <a href="contact.html#appointment" class="btn btn-luxury-cta">
+                <span>BOOK PRIVATE SALON</span>
+                <i class="fa-solid fa-calendar-check ms-2 btn-arrow"></i>
+              </a>
+            </div>
+
+            <!-- Hero Feature Strip -->
+            <div class="hero-feature-badges">
+              <div class="hero-feature-item">
+                <i class="fa-solid fa-certificate"></i>
+                <span>GIA &amp; IGI Certified</span>
+              </div>
+              <div class="hero-feature-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>London Assay Hallmarked</span>
+              </div>
+              <div class="hero-feature-item">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <span>100% Conflict-Free</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero 3D Showcase Card -->
+          <div class="col-12 col-lg-5" data-aos="fade-left" data-aos-duration="1000">
+            <div class="hero-showcase-card">
+              <div class="hero-card-img-wrap">
+                <img src="assets/images/img_01.webp" alt="The Sovereign Diamond Choker">
+                <div class="hero-floating-badge">
+                  <i class="fa-solid fa-sparkles me-1"></i> Masterpiece
+                </div>
+              </div>
+              <div class="hero-card-details d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="hero-card-category">Haute Joaillerie &bull; 950 Platinum</span>
+                  <h3 class="hero-card-title">The Sovereign Diamond Cascade</h3>
+                  <div class="small text-white-50">52 Graduated D-Flawless Diamonds</div>
+                </div>
+                <div class="text-end">
+                  <div class="hero-card-price">£185,000</div>
+                  <a href="contact.html#appointment" class="btn btn-outline-gold-sm mt-1">Inquire</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 2: MARQUEE CREDENTIALS TICKER
+         =================================================================== -->
+    <section class="brand-ticker-section" aria-hidden="true">
+      <div class="ticker-track">
+        <div class="ticker-item"><i class="fa-solid fa-gem"></i> Maison Stackly Mayfair</div>
+        <div class="ticker-item"><i class="fa-solid fa-crown"></i> 1888 British Royal Heritage</div>
+        <div class="ticker-item"><i class="fa-solid fa-award"></i> GIA &amp; IGI Certified Solitaires</div>
+        <div class="ticker-item"><i class="fa-solid fa-ring"></i> 100% Conflict-Free Natural Diamonds</div>
+        <div class="ticker-item"><i class="fa-solid fa-stamp"></i> British Assay Office Hallmarked</div>
+        <div class="ticker-item"><i class="fa-solid fa-truck-shield"></i> Insured Global Armored Delivery</div>
+        <div class="ticker-item"><i class="fa-solid fa-gem"></i> Maison Stackly Mayfair</div>
+        <div class="ticker-item"><i class="fa-solid fa-crown"></i> 1888 British Royal Heritage</div>
+        <div class="ticker-item"><i class="fa-solid fa-award"></i> GIA &amp; IGI Certified Solitaires</div>
+        <div class="ticker-item"><i class="fa-solid fa-ring"></i> 100% Conflict-Free Natural Diamonds</div>
+        <div class="ticker-item"><i class="fa-solid fa-stamp"></i> British Assay Office Hallmarked</div>
+        <div class="ticker-item"><i class="fa-solid fa-truck-shield"></i> Insured Global Armored Delivery</div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 3: CURATED SIGNATURE CATEGORIES (3D TILT CARDS)
+         =================================================================== -->
+    <section class="py-5" id="categories">
+      <div class="container py-4">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-kicker">Curated Realms</span>
+          <h2 class="section-title">The Signature Haute Categories</h2>
+          <p class="section-subtitle">
+            Explore masterpieces shaped from the world's most coveted natural diamonds, untreated gemstones, and solid noble metals.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Category 1 -->
+          <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="category-card" onclick="window.location.href='collections.html#solitaires'">
+              <img src="assets/images/img_08.webp" alt="Solitaire Rings" class="category-card-img">
+              <div class="category-card-overlay">
+                <span class="category-kicker">D-Colorless Solitaires</span>
+                <h3 class="category-name">Solitaire Engagement Rings</h3>
+                <span class="category-link">Discover Solitaires &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="category-card" onclick="window.location.href='collections.html#necklaces'">
+              <img src="assets/images/img_05.webp" alt="Haute Necklaces" class="category-card-img">
+              <div class="category-card-overlay">
+                <span class="category-kicker">Statement Colliers</span>
+                <h3 class="category-name">High Jewellery Necklaces</h3>
+                <span class="category-link">View Colliers &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="category-card" onclick="window.location.href='collections.html#gemstones'">
+              <img src="assets/images/img_14.webp" alt="Royal Earrings" class="category-card-img">
+              <div class="category-card-overlay">
+                <span class="category-kicker">Emerald &amp; Diamond Drops</span>
+                <h3 class="category-name">Royal Earrings &amp; Pendants</h3>
+                <span class="category-link">Explore Earrings &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="category-card" onclick="window.location.href='collections.html'">
+              <img src="assets/images/img_18.webp" alt="Diamond Bracelets" class="category-card-img">
+              <div class="category-card-overlay">
+                <span class="category-kicker">Rivière &amp; Bangles</span>
+                <h3 class="category-name">Diamond Tennis Bracelets</h3>
+                <span class="category-link">Browse Bracelets &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5 -->
+          <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="category-card" onclick="window.location.href='collections.html#mens'">
+              <img src="assets/images/img_16.webp" alt="Swiss Timepieces" class="category-card-img">
+              <div class="category-card-overlay">
+                <span class="category-kicker">Haute Horlogerie</span>
+                <h3 class="category-name">Swiss Luxury Timepieces</h3>
+                <span class="category-link">Inspect Timepieces &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 6 -->
+          <div class="col-12 col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="category-card" onclick="window.location.href='collections.html#bridal'">
+              <img src="assets/images/img_07.webp" alt="Bespoke Bridal Sets" class="category-card-img">
+              <div class="category-card-overlay">
+                <span class="category-kicker">His &amp; Hers Bands</span>
+                <h3 class="category-name">Bespoke Bridal Suites</h3>
+                <span class="category-link">View Bridal Suite &rarr;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 4: HIGH JEWELLERY SHOWCASE (MASTERPIECE)
+         =================================================================== -->
+    <section class="masterpiece-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6" data-aos="fade-right">
+            <span class="section-kicker">Maison Masterpiece</span>
+            <h2 class="section-title">The Empress Emerald &amp; Diamond Choker</h2>
+            <p>
+              Centering a museum-grade 45-carat untreated Colombian emerald certified by Gübelin, enveloped by 120 carats of natural D-Flawless pear and marquise diamonds articulated in 950 platinum.
+            </p>
+            <div class="spec-table my-4">
+              <div class="spec-row">
+                <span class="spec-label">Central Gemstone:</span>
+                <span class="spec-val">45.20 ct Untreated Muzo Emerald</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Accent Diamonds:</span>
+                <span class="spec-val">120.50 ct (D/FL Triple Excellent)</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Mounting Alloy:</span>
+                <span class="spec-val">Hand-forged 950 Platinum</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Atelier Hours:</span>
+                <span class="spec-val">680 Handcrafted Bench Hours</span>
+              </div>
+              <div class="spec-row">
+                <span class="spec-label">Provenance &amp; Assay:</span>
+                <span class="spec-val">London Leopard Hallmark 2026</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <span class="fs-3 font-serif text-white fw-bold">£240,000</span>
+              <a href="contact.html#appointment" class="btn btn-gold">REQUEST PRIVATE SALON VIEWING</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6" data-aos="fade-left">
+            <div class="masterpiece-display-frame">
+              <img src="assets/images/img_12.webp" alt="The Empress Emerald Choker">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 5: NEW ARRIVALS & SEASONAL 2026
+         =================================================================== -->
+    <section class="py-5" id="arrivals">
+      <div class="container py-4">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-kicker">Autumn / Winter 2026</span>
+          <h2 class="section-title">The Sovereign New Arrivals</h2>
+          <p class="section-subtitle">
+            Freshly released from our Mayfair workshops, each certified by the London Assay Office and GIA.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Product 1 -->
+          <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="product-grid-card">
+              <div class="product-img-wrapper">
+                <img src="assets/images/img_08.webp" alt="Kensington Oval Pavé Ring">
+                <span class="product-badge">New Release</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <div class="product-details">
+                <span class="product-category-sub">Solitaire &bull; Platinum 950</span>
+                <h4 class="product-name">The Kensington Oval Pavé</h4>
+                <p class="small text-white-50 mb-3">2.85 Carat Oval Brilliant resting on a hidden diamond halo.</p>
+                <div class="product-price-row">
+                  <span class="product-price">£28,900</span>
+                  <a href="contact.html#appointment" class="btn btn-outline-gold-sm">Inquire</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="product-grid-card">
+              <div class="product-img-wrapper">
+                <img src="assets/images/img_13.webp" alt="Ceylon Sapphire Pendant">
+                <span class="product-badge">Untreated</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <div class="product-details">
+                <span class="product-category-sub">Sapphire Pendant &bull; 18K Gold</span>
+                <h4 class="product-name">The Ceylon Royal Blue Halo</h4>
+                <p class="small text-white-50 mb-3">8.40 Carat Cushion Sapphire surrounded by marquise diamonds.</p>
+                <div class="product-price-row">
+                  <span class="product-price">£52,000</span>
+                  <a href="contact.html#appointment" class="btn btn-outline-gold-sm">Inquire</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="product-grid-card">
+              <div class="product-img-wrapper">
+                <img src="assets/images/img_06.webp" alt="Diamond Tennis Bracelet">
+                <span class="product-badge">14 Carats</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <div class="product-details">
+                <span class="product-category-sub">Tennis Bracelet &bull; Platinum</span>
+                <h4 class="product-name">The Sovereign Rivière Line</h4>
+                <p class="small text-white-50 mb-3">54 Matched D-color diamonds in flexible four-prong articulation.</p>
+                <div class="product-price-row">
+                  <span class="product-price">£38,500</span>
+                  <a href="contact.html#appointment" class="btn btn-outline-gold-sm">Inquire</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="product-grid-card">
+              <div class="product-img-wrapper">
+                <img src="assets/images/img_19.webp" alt="Pink Sapphire Ear Drops">
+                <span class="product-badge">Rare Earth</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <div class="product-details">
+                <span class="product-category-sub">Earrings &bull; Rose Gold 18K</span>
+                <h4 class="product-name">The Duchess Pink Sapphire Drops</h4>
+                <p class="small text-white-50 mb-3">Vibrant Madagascar pink sapphires accented by diamond baguettes.</p>
+                <div class="product-price-row">
+                  <span class="product-price">£26,400</span>
+                  <a href="contact.html#appointment" class="btn btn-outline-gold-sm">Inquire</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 6: 4CS DIAMOND EDUCATION & CARAT CALCULATOR
+         =================================================================== -->
+    <section class="py-5 bg-dark-card border-top border-bottom border-secondary border-opacity-15">
+      <div class="container py-4">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-kicker">Gemological Mastery</span>
+          <h2 class="section-title">The 4Cs Education &amp; Interactive Carat Calculator</h2>
+          <p class="section-subtitle">
+            Understand the science of diamond fire and calculate diamond dimensions and estimated valuation.
+          </p>
+        </div>
+
+        <!-- 4Cs Cards Grid -->
+        <div class="row g-4 mb-5">
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="diamond-4c-box">
+              <div class="diamond-4c-icon"><i class="fa-solid fa-scissors"></i></div>
+              <h4 class="h5 text-white">Cut Grade</h4>
+              <p class="small text-white-50 mb-0">Determines optical reflection, dispersion, and brilliance. Stackly carries only Triple-Excellent.</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="diamond-4c-box">
+              <div class="diamond-4c-icon"><i class="fa-solid fa-palette"></i></div>
+              <h4 class="h5 text-white">Color Grade</h4>
+              <p class="small text-white-50 mb-0">Graded from D (pure colorless ice) to Z. We curate strictly within the D to F colorless spectrum.</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="diamond-4c-box">
+              <div class="diamond-4c-icon"><i class="fa-solid fa-eye"></i></div>
+              <h4 class="h5 text-white">Clarity Grade</h4>
+              <p class="small text-white-50 mb-0">Evaluated at 10x magnification. We specialize in Flawless (FL) and Very Very Slightly Included (VVS).</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="diamond-4c-box">
+              <div class="diamond-4c-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+              <h4 class="h5 text-white">Carat Weight</h4>
+              <p class="small text-white-50 mb-0">Precise metric weight (1 ct = 0.20 grams). Density balanced with millimeter spread.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Calculator Slider -->
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-12 col-lg-8">
+            <div class="p-4 p-md-5 bg-dark border border-secondary border-opacity-25 rounded-3">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-white font-serif fs-5">Select Desired Carat Weight:</span>
+                <span class="fs-3 font-serif text-gold fw-bold" id="caratValueDisplay">2.50 ct</span>
+              </div>
+              <input type="range" class="form-range" id="caratSlider" min="0.5" max="6.0" step="0.25" value="2.5">
+              
+              <div class="row g-3 text-center pt-4 border-top border-secondary border-opacity-25 mt-3">
+                <div class="col-6 col-md-4">
+                  <span class="small text-white-50 d-block">Estimated Diameter</span>
+                  <strong class="text-white fs-5" id="diamondDiameterDisplay">8.8 mm</strong>
+                </div>
+                <div class="col-6 col-md-4">
+                  <span class="small text-white-50 d-block">Color &amp; Clarity</span>
+                  <strong class="text-white fs-5">D / VVS1 Flawless</strong>
+                </div>
+                <div class="col-12 col-md-4 mt-3 mt-md-0">
+                  <span class="small text-white-50 d-block">Estimated Valuation</span>
+                  <strong class="text-gold fs-4" id="diamondEstPrice">£31,800</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 7: BESPOKE ATELIER 5-STEP JOURNEY
+         =================================================================== -->
+    <section class="py-5" id="journey">
+      <div class="container py-4">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-kicker">The Creation Process</span>
+          <h2 class="section-title">The Bespoke 5-Step Atelier Journey</h2>
+          <p class="section-subtitle">
+            From initial gouache sketches to the London Assay Office hallmark, follow your heirloom's genesis.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-step-card">
+              <div class="step-num-badge">01</div>
+              <h5 class="text-white mb-2">Gouache Sketch</h5>
+              <p class="small text-white-50 mb-0">Hand-painted watercolor sketches exploring stone geometry and ergonomic finger contours.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-step-card">
+              <div class="step-num-badge">02</div>
+              <h5 class="text-white mb-2">Gem Sourcing</h5>
+              <p class="small text-white-50 mb-0">Ethical procurement of certified rough and polished stones from Botswana, Colombia, and Ceylon.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg" data-aos="fade-up" data-aos-delay="300">
+            <div class="timeline-step-card">
+              <div class="step-num-badge">03</div>
+              <h5 class="text-white mb-2">3D Wax Cast</h5>
+              <p class="small text-white-50 mb-0">Micro-precision CAD engineering translated into tactile wax prototypes for finger fitting.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg" data-aos="fade-up" data-aos-delay="400">
+            <div class="timeline-step-card">
+              <div class="step-num-badge">04</div>
+              <h5 class="text-white mb-2">Goldsmith Forging</h5>
+              <p class="small text-white-50 mb-0">Hand-setting stones under 40x stereomicroscopes into forged 950 platinum or 18K gold.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg" data-aos="fade-up" data-aos-delay="500">
+            <div class="timeline-step-card">
+              <div class="step-num-badge">05</div>
+              <h5 class="text-white mb-2">Assay Hallmark</h5>
+              <p class="small text-white-50 mb-0">Official British assay testing, London Leopard hallmark stamp, and white-glove delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 8: VIRTUAL TRY-ON & VIDEO ATELIER TEASER
+         =================================================================== -->
+    <section class="py-5 bg-dark-card border-top border-bottom border-secondary border-opacity-15">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6" data-aos="fade-right">
+            <span class="section-kicker">Haute Motion</span>
+            <h2 class="section-title">Experience the Scintillation of Pure Fire</h2>
+            <p>
+              Under natural daylight, a Triple-Excellent cut Stackly diamond produces an unmistakable blaze of spectral dispersion. Watch our master gemologists inspect fire and scintillation under polarized northern light.
+            </p>
+            <p>
+              Clients worldwide can also request an interactive 4K video consultation, viewing loose stones at 100x magnification from the comfort of their residence.
+            </p>
+            <div class="pt-2">
+              <a href="contact.html#appointment" class="btn btn-luxury-cta">
+                <span>REQUEST 4K VIDEO CONSULTATION</span>
+                <i class="fa-solid fa-video ms-2 btn-arrow"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6" data-aos="fade-left">
+            <div class="video-teaser-wrap">
+              <img src="assets/images/img_02.webp" alt="Diamond Scintillation Video Teaser">
+              <div class="video-play-btn" onclick="alert('Playing 4K Scintillation Monograph in Mayfair Virtual Suite.');" title="Play High Definition Video">
+                <i class="fa-solid fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 9: BRIDAL & WEDDING SUITE
+         =================================================================== -->
+    <section class="py-5" id="bridal-suite">
+      <div class="container py-4">
+        <div class="bridal-banner-card p-4 p-md-5" data-aos="fade-up">
+          <div class="row align-items-center g-5">
+            <div class="col-12 col-lg-6">
+              <span class="section-kicker">Romantic Royalty</span>
+              <h2 class="section-title">The Royal Bridal &amp; Engagement Symphony</h2>
+              <p>
+                From timeless solitaire engagement rings to matching curved his-and-hers wedding bands, our bridal suite honors the solemnity and joy of lifelong devotion.
+              </p>
+              <ul class="list-unstyled text-white-75 mb-4">
+                <li><i class="fa-solid fa-gem text-gold me-2"></i> Complimentary secret ruby or sapphire set inside the band</li>
+                <li><i class="fa-solid fa-gem text-gold me-2"></i> Custom laser fingerprint or calligraphic Roman numeral engraving</li>
+                <li><i class="fa-solid fa-gem text-gold me-2"></i> Lifetime annual prong retipping and ultrasonic spa cleaning</li>
+              </ul>
+              <a href="collections.html#bridal" class="btn btn-gold">EXPLORE BRIDAL SUITE</a>
+            </div>
+            <div class="col-12 col-lg-6">
+              <img src="assets/images/img_07.webp" alt="Fine Bridal Jewelry Set" class="img-fluid rounded border border-secondary border-opacity-25 shadow-lg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 10: VIP TESTIMONIALS & ROYAL PATRONAGE
+         =================================================================== -->
+    <section class="py-5 bg-dark-card border-top border-bottom border-secondary border-opacity-15">
+      <div class="container py-4">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-kicker">Patronage &amp; Distinction</span>
+          <h2 class="section-title">Words From Discerning Collectors</h2>
+          <p class="section-subtitle">
+            Reflections from clients in London, Geneva, Paris, and New York.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-card">
+              <div>
+                <div class="stars-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "Commissioning our 4-carat emerald-cut engagement ring with Maison Stackly was an unforgettable experience. The private salon on Bond Street, the stereomicroscope inspection, and Arthur’s goldsmithing are peerless."
+                </p>
+              </div>
+              <div class="client-meta">
+                <img src="assets/images/img_09.webp" alt="Bespoke Emerald Cut Diamond Solitaire" class="client-avatar">
+                <div>
+                  <strong class="text-white d-block">Lady Beatrice Kensington</strong>
+                  <span class="small text-white-50">London &bull; Bespoke Engagement Ring</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-card">
+              <div>
+                <div class="stars-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "As an untreated sapphire collector, finding genuine unheated Ceylon stones with GRS documentation is rare. Stackly delivered an 8-carat cushion with velvety royal blue saturation that took my breath away."
+                </p>
+              </div>
+              <div class="client-meta">
+                <img src="assets/images/img_13.webp" alt="Royal Ceylon Sapphire Solitaire Ring" class="client-avatar">
+                <div>
+                  <strong class="text-white d-block">Sir Julian Devereaux</strong>
+                  <span class="small text-white-50">Geneva &bull; Rare Gemstone Collector</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-card">
+              <div>
+                <div class="stars-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-quote">
+                  "The white-glove armored delivery to our Manhattan residence arrived impeccably sealed with London Assay certificates. The craftsmanship in the micro-pave setting is true haute horlogerie grade."
+                </p>
+              </div>
+              <div class="client-meta">
+                <img src="assets/images/img_05.webp" alt="Haute Joaillerie Diamond Rivière" class="client-avatar">
+                <div>
+                  <strong class="text-white d-block">Victoria Vance-Rothschild</strong>
+                  <span class="small text-white-50">New York &bull; High Jewellery Rivière</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 11: LIFETIME WARRANTY & GUARANTEES
+         =================================================================== -->
+    <section class="py-5">
+      <div class="container py-4">
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="guarantee-badge-box">
+              <div class="guarantee-icon"><i class="fa-solid fa-award"></i></div>
+              <h5 class="text-white mb-2">Lifetime Warranty</h5>
+              <p class="small text-white-50 mb-0">Complimentary annual prong inspection, claw re-tipping, and multi-stage polishing.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="guarantee-badge-box">
+              <div class="guarantee-icon"><i class="fa-solid fa-stamp"></i></div>
+              <h5 class="text-white mb-2">London Assay Hallmark</h5>
+              <p class="small text-white-50 mb-0">Every gram of gold and platinum is tested and stamped at Goldsmiths' Hall, London.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+            <div class="guarantee-badge-box">
+              <div class="guarantee-icon"><i class="fa-solid fa-earth-americas"></i></div>
+              <h5 class="text-white mb-2">Conflict-Free KPCS</h5>
+              <p class="small text-white-50 mb-0">100% compliant with the Kimberley Process, ethical wages, and fair ecological mining.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="400">
+            <div class="guarantee-badge-box">
+              <div class="guarantee-icon"><i class="fa-solid fa-truck-shield"></i></div>
+              <h5 class="text-white mb-2">Insured Global Transit</h5>
+              <p class="small text-white-50 mb-0">Armored delivery with comprehensive Lloyd's of London insurance coverage worldwide.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 12: THE JOURNAL CHRONICLES
+         =================================================================== -->
+    <section class="py-5 bg-dark-card border-top border-bottom border-secondary border-opacity-15">
+      <div class="container py-4">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-kicker">Mayfair Chronicles</span>
+          <h2 class="section-title">The Haute Joaillerie Journal</h2>
+          <p class="section-subtitle">
+            Curated articles on historic gemstone auctions, diamond care, and red-carpet trend forecasts.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="journal-card">
+              <div class="journal-img-wrap">
+                <img src="assets/images/img_12.webp" alt="Royal Emerald & Diamond Choker">
+              </div>
+              <div class="journal-body">
+                <span class="journal-date">Trends &bull; October 2026</span>
+                <h4 class="journal-title">The Sovereign Emerald Revival: Red-Carpet Trends at Cannes</h4>
+                <p class="small text-white-50 flex-grow-1">Why untreated Colombian emeralds are commanding international auction attention.</p>
+                <a href="journal.html" class="text-gold small text-decoration-none mt-2">Read Monograph &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="journal-card">
+              <div class="journal-img-wrap">
+                <img src="assets/images/img_03.webp" alt="Diamond Scintillation & Anatomy">
+              </div>
+              <div class="journal-body">
+                <span class="journal-date">Education &bull; Volume 1</span>
+                <h4 class="journal-title">Diamond Anatomy: Why Table Ratios Dictate True Fire</h4>
+                <p class="small text-white-50 flex-grow-1">How crown angles and pavilion depth maximize light return in round solitaires.</p>
+                <a href="journal.html" class="text-gold small text-decoration-none mt-2">Read Monograph &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="journal-card">
+              <div class="journal-img-wrap">
+                <img src="assets/images/img_16.webp" alt="Diamond Solitaire Fine Jewellery Case">
+              </div>
+              <div class="journal-body">
+                <span class="journal-date">Conservation &bull; Archive</span>
+                <h4 class="journal-title">The Fine Jewellery Care Manual: Preserving Natural Heirlooms</h4>
+                <p class="small text-white-50 flex-grow-1">Expert guidelines for cleaning natural pearls, emeralds, and 950 platinum.</p>
+                <a href="journal.html" class="text-gold small text-decoration-none mt-2">Read Monograph &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 13: PRIVATE VIP APPOINTMENT BOOKING SUITE
+         =================================================================== -->
+    <section class="py-5" id="vip-booking">
+      <div class="container py-4">
+        <div class="appointment-booking-box" data-aos="fade-up">
+          <div class="row align-items-center g-5">
+            <div class="col-12 col-lg-5">
+              <span class="section-kicker">Mayfair Townhouse</span>
+              <h2 class="section-title">Schedule a Private Salon Viewing</h2>
+              <p class="text-white-50">
+                Reserve an audience with our Senior Gemologists at 45 New Bond Street, Mayfair. Enjoy private salon discretion and stereomicroscope stone examinations.
+              </p>
+              <div class="d-flex align-items-center gap-3 pt-2">
+                <i class="fa-solid fa-phone text-gold fa-2x"></i>
+                <div>
+                  <span class="small text-white-50 d-block">Immediate Telephone Concierge</span>
+                  <a href="tel:+919876543210" class="text-white fw-bold text-decoration-none fs-5 hover-gold">+91 9876543210</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-7">
+              <form onsubmit="event.preventDefault(); alert('Thank you. Our Mayfair concierge desk will confirm your appointment within 4 hours.');">
+                <div class="row g-3">
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control form-control-luxury" placeholder="Full Name *" required>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input type="tel" class="form-control form-control-luxury" placeholder="Telephone (+91 9876543210) *" required>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input type="email" class="form-control form-control-luxury" placeholder="Confidential Email *" required>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input type="date" class="form-control form-control-luxury" required>
+                  </div>
+                  <div class="col-12">
+                    <select class="form-select form-select-luxury" required>
+                      <option value="" selected disabled>Select Consultation Focus...</option>
+                      <option value="solitaire">Bespoke Solitaire Engagement Ring</option>
+                      <option value="high-jewellery">High Jewellery Choker / Suite</option>
+                      <option value="gemstone">Rare Gemstone Sourcing (Sapphire/Emerald/Ruby)</option>
+                      <option value="heirloom">Heirloom Restoration &amp; Redesign</option>
+                    </select>
+                  </div>
+                  <div class="col-12 pt-2">
+                    <button type="submit" class="btn btn-gold w-100 py-3">CONFIRM PRIVATE APPOINTMENT</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 14: INSTAGRAM & RED CARPET FEED (#StacklyJewels)
+         =================================================================== -->
+    <section class="py-5 bg-dark-card border-top border-secondary border-opacity-15">
+      <div class="container py-4">
+        <div class="section-header text-center" data-aos="fade-up">
+          <span class="section-kicker">Social Gallery</span>
+          <h2 class="section-title">Follow the Maison #StacklyJewels</h2>
+          <p class="section-subtitle">
+            Glimpses from the Mayfair workbench, red-carpet galas, and bespoke bridal celebrations.
+          </p>
+        </div>
+
+        <div class="insta-feed-grid" data-aos="fade-up">
+          <div class="insta-item">
+            <img src="assets/images/img_16.webp" alt="Instagram 1">
+            <div class="insta-item-overlay"><i class="fa-brands fa-instagram"></i></div>
+          </div>
+          <div class="insta-item">
+            <img src="assets/images/img_05.webp" alt="Instagram 2">
+            <div class="insta-item-overlay"><i class="fa-brands fa-instagram"></i></div>
+          </div>
+          <div class="insta-item">
+            <img src="assets/images/img_18.webp" alt="Instagram 3">
+            <div class="insta-item-overlay"><i class="fa-brands fa-instagram"></i></div>
+          </div>
+          <div class="insta-item">
+            <img src="assets/images/img_10.webp" alt="Instagram 4">
+            <div class="insta-item-overlay"><i class="fa-brands fa-instagram"></i></div>
+          </div>
+          <div class="insta-item">
+            <img src="assets/images/img_14.webp" alt="Instagram 5">
+            <div class="insta-item-overlay"><i class="fa-brands fa-instagram"></i></div>
+          </div>
+          <div class="insta-item">
+            <img src="assets/images/img_19.webp" alt="Instagram 6">
+            <div class="insta-item-overlay"><i class="fa-brands fa-instagram"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Dynamic Footer Component -->
+  <div id="footer-placeholder"></div>
+
+  <!-- CDN JavaScript Libraries: Three.js, Bootstrap 5, AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

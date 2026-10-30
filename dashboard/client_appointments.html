@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Appointments | Maison Stackly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+<body class="dash-subpage">
+
+    <div class="subpage-header">
+        <div>
+            <h1 class="subpage-title">Private Salon &amp; Atelier Viewings</h1>
+            <p class="subpage-subtitle">Schedule private viewings at 45 New Bond Street, London or Salem Flagship Salon.</p>
+        </div>
+        <span class="badge-gold"><i class="fa-solid fa-crown me-1"></i> Sovereign Concierge Priority</span>
+    </div>
+
+    <!-- Upcoming Viewing Highlight -->
+    <div class="dash-panel-card mb-4">
+        <div class="dash-panel-header">
+            <h3 class="dash-panel-title">
+                <i class="fa-solid fa-calendar-star text-gold"></i> Your Next Confirmed VIP Appointment
+            </h3>
+            <span class="badge-green"><i class="fa-solid fa-circle-check"></i> Confirmed &amp; Reserved</span>
+        </div>
+        <div class="row align-items-center g-4">
+            <div class="col-12 col-md-4">
+                <div class="p-3 rounded text-center" style="background: rgba(197, 168, 128, 0.08); border: 1px solid rgba(197, 168, 128, 0.2);">
+                    <span class="text-gold text-uppercase letter-spacing-2 small d-block mb-1">Salon Viewing Date</span>
+                    <strong class="text-white h3 d-block font-serif mb-0">Wednesday, Nov 4, 2026</strong>
+                    <span class="text-white-50 small">2:30 PM &bull; British Standard Time</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <h4 class="text-white h5 mb-1">Private Loose Diamond &amp; Solitaire Inspection</h4>
+                <p class="text-white-50 small mb-2">
+                    <i class="fa-solid fa-location-dot text-gold me-1"></i> The Oval Drawing Salon, 45 New Bond Street, Mayfair, London W1S 2SF
+                </p>
+                <p class="text-white-50 small mb-3">
+                    <i class="fa-solid fa-user-tie text-gold me-1"></i> Hosted by: <strong>Lord Julian Vance</strong>, Senior Diamond Gemologist
+                </p>
+                <div class="d-flex gap-2 flex-wrap">
+                    <button class="btn-gold-sm" onclick="alert('Appointment details re-sent to your registered email.');"><i class="fa-solid fa-envelope"></i> Resend Pass</button>
+                    <button class="btn-gold-outline-sm" onclick="alert('Connecting to Julian Vance via Mayfair Concierge...');"><i class="fa-solid fa-comments"></i> Chat with Gemologist</button>
+                    <button class="btn-gold-outline-sm text-danger border-danger" onclick="alert('Appointment reschedule request forwarded.');"><i class="fa-solid fa-calendar-xmark"></i> Reschedule</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Form & Past History -->
+    <div class="row g-4">
+        <div class="col-12 col-lg-6">
+            <div class="dash-panel-card h-100">
+                <div class="dash-panel-header">
+                    <h3 class="dash-panel-title">
+                        <i class="fa-solid fa-calendar-plus text-gold"></i> Reserve a Private Appointment
+                    </h3>
+                </div>
+                <form onsubmit="event.preventDefault(); alert('Thank you. Your VIP Salon Request has been submitted to the Mayfair Concierge.'); this.reset();">
+                    <div class="mb-3">
+                        <label class="form-label-gold">Select Salon Location</label>
+                        <select class="form-select form-control-luxury" required>
+                            <option value="London" selected>London Mayfair Atelier (45 New Bond St, UK)</option>
+                            <option value="Salem">Salem Flagship Salon (MMR Complex, Chinna Thirupathi)</option>
+                            <option value="Virtual">Interactive 4K Remote Video Consultation</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label-gold">Consultation Purpose</label>
+                        <select class="form-select form-control-luxury" required>
+                            <option value="Bespoke" selected>Bespoke Engagement Ring Commission</option>
+                            <option value="Gems">Rare Untreated Gemstone Viewing (Sapphires/Emeralds)</option>
+                            <option value="Appraisal">Heirloom Appraisal &amp; GIA Certification</option>
+                            <option value="Bridal">Haute Bridal Suite Curation</option>
+                        </select>
+                    </div>
+                    <div class="row g-2 mb-3">
+                        <div class="col-6">
+                            <label class="form-label-gold">Preferred Date</label>
+                            <input type="date" class="form-control form-control-luxury" required>
+                        </div>
+                        <div class="col-6">
+                            <label class="form-label-gold">Preferred Time</label>
+                            <select class="form-select form-control-luxury">
+                                <option>11:00 AM (Morning)</option>
+                                <option>02:30 PM (Afternoon)</option>
+                                <option>05:00 PM (Late Salon)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label-gold">Special Requests / Preferences</label>
+                        <textarea class="form-control form-control-luxury" rows="2" placeholder="e.g. Inquire about untreated Colombian emerald suites..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-gold-sm w-100 py-2">
+                        <i class="fa-solid fa-paper-plane me-1"></i> Request VIP Salon Booking
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="dash-panel-card h-100">
+                <div class="dash-panel-header">
+                    <h3 class="dash-panel-title">
+                        <i class="fa-solid fa-clock-rotate-left text-gold"></i> Past Salon Consultations
+                    </h3>
+                </div>
+                <div class="d-flex flex-column gap-3">
+                    <div class="p-3 rounded" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(197,168,128,0.12);">
+                        <div class="d-flex justify-content-between align-items-start mb-1">
+                            <strong class="text-white">Oval Diamond 4Cs Selection</strong>
+                            <span class="badge-green">Completed</span>
+                        </div>
+                        <p class="text-white-50 small mb-1">Mayfair Salon &bull; Aug 22, 2026 &bull; Host: Henri de Mayfair</p>
+                        <span class="text-gold small"><i class="fa-solid fa-check me-1"></i> Selected GIA #2195829104 (2.85ct D/VVS1)</span>
+                    </div>
+
+                    <div class="p-3 rounded" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(197,168,128,0.12);">
+                        <div class="d-flex justify-content-between align-items-start mb-1">
+                            <strong class="text-white">Ceylon Sapphire Presentation</strong>
+                            <span class="badge-green">Completed</span>
+                        </div>
+                        <p class="text-white-50 small mb-1">Salem VIP Salon &bull; May 10, 2026 &bull; Host: Elena Rostova</p>
+                        <span class="text-gold small"><i class="fa-solid fa-check me-1"></i> Commissioned 8.40ct Halo Pendant</span>
+                    </div>
+
+                    <div class="p-3 rounded" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(197,168,128,0.12);">
+                        <div class="d-flex justify-content-between align-items-start mb-1">
+                            <strong class="text-white">Annual Vault Valuation Audit</strong>
+                            <span class="badge-green">Completed</span>
+                        </div>
+                        <p class="text-white-50 small mb-1">London Mayfair &bull; Jan 15, 2026 &bull; Host: Assay Registrar</p>
+                        <span class="text-gold small"><i class="fa-solid fa-check me-1"></i> Re-certified portfolio value (£128,500)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

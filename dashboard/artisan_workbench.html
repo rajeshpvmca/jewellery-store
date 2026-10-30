@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Bench Jobs | Maison Stackly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+<body class="dash-subpage">
+
+    <div class="subpage-header">
+        <div>
+            <h1 class="subpage-title">Active Bench Jobs &amp; Mounting Queue</h1>
+            <p class="subpage-subtitle">Master goldsmith workbench workflow: from aerospace CAD casting to hand micro-prong raising.</p>
+        </div>
+        <button class="btn-gold-sm" onclick="alert('New bench job initiated from CAD design queue.');">
+            <i class="fa-solid fa-plus"></i> Pull Next CAD Job
+        </button>
+    </div>
+
+    <!-- Active Job 1 -->
+    <div class="dash-panel-card mb-4">
+        <div class="dash-panel-header">
+            <div>
+                <span class="text-gold small fw-bold text-uppercase letter-spacing-1">Job #JOB-304 &bull; Priority Client Order</span>
+                <h3 class="dash-panel-title mt-1">3.10ct Cushion Solitaire &bull; Micro-Pavé Gallery</h3>
+            </div>
+            <div class="d-flex gap-2">
+                <span class="badge-blue"><i class="fa-solid fa-circle-notch fa-spin me-1"></i> Stone Setting (Step 3/5)</span>
+                <span class="badge-gold">Allocated: 64 Melee Stones</span>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-3">
+            <div class="col-12 col-md-3">
+                <img src="../assets/images/img_04.webp" 
+                     alt="Polishing ring" class="img-fluid rounded border border-secondary border-opacity-25 w-100" style="max-height: 180px; object-fit: cover;">
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="row g-3 mb-3">
+                    <div class="col-6 col-md-3">
+                        <span class="text-white-50 small d-block">Center Stone:</span>
+                        <strong class="text-white">3.10ct Cushion GIA D/Flawless</strong>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <span class="text-white-50 small d-block">Target Prongs:</span>
+                        <strong class="text-white">4 Eagle-Claw Prongs (0.6mm)</strong>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <span class="text-white-50 small d-block">Goldsmith:</span>
+                        <strong class="text-gold">Henri de Mayfair</strong>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <span class="text-white-50 small d-block">Stereo Zoom:</span>
+                        <strong class="text-white">Leica 40x Active</strong>
+                    </div>
+                </div>
+
+                <!-- Workflow Step Checkboxes -->
+                <div class="p-3 rounded mb-3" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(197,168,128,0.15);">
+                    <span class="small text-white fw-bold d-block mb-2"><i class="fa-solid fa-clipboard-check text-gold me-1"></i> Artisan Production Checklist:</span>
+                    <div class="row g-2">
+                        <div class="col-6 col-md-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="step1" checked>
+                                <label class="form-check-label text-white small" for="step1">1. Centrifugal 950 Pour</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="step2" checked>
+                                <label class="form-check-label text-white small" for="step2">2. Hand-File &amp; Prongs</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="step3" checked>
+                                <label class="form-check-label text-white small" for="step3">3. Micro-Pavé Bead Raise</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="step4">
+                                <label class="form-check-label text-white-50 small" for="step4">4. Dialux Rouge Mirror</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="step5">
+                                <label class="form-check-label text-white-50 small" for="step5">5. London Assay Submission</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="step6">
+                                <label class="form-check-label text-white-50 small" for="step6">6. Velvet Box Wax Seal</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                    <span class="text-white-50 small"><i class="fa-solid fa-clock text-gold me-1"></i> Bench Time Elapsed: <strong>03h 12m</strong></span>
+                    <div class="d-flex gap-2">
+                        <button class="btn-gold-outline-sm" onclick="alert('Microscope photo uploaded to commission ledger.');"><i class="fa-solid fa-camera"></i> Log 40x Photo</button>
+                        <button class="btn-gold-sm" onclick="alert('Step marked complete. Advancing to Mirror Polish.');"><i class="fa-solid fa-arrow-right"></i> Advance to Polish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Active Job 2 -->
+    <div class="dash-panel-card">
+        <div class="dash-panel-header">
+            <div>
+                <span class="text-gold small fw-bold text-uppercase letter-spacing-1">Job #JOB-308 &bull; Heirloom Collection</span>
+                <h3 class="dash-panel-title mt-1">Channel-Set Princess Diamond Eternity Band</h3>
+            </div>
+            <div class="d-flex gap-2">
+                <span class="badge-purple">Kiln Firing (Step 2/5)</span>
+                <span class="badge-gold">Alloy: 18K Yellow Gold</span>
+            </div>
+        </div>
+        <p class="text-white-50 small mb-3">
+            Flask investment in kiln at 750°C. Centrifugal pouring of proprietary 18K Mayfair tone scheduled for 14:00 today.
+        </p>
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <span class="badge-green"><i class="fa-solid fa-temperature-three-quarters me-1"></i> Kiln Temp: 748°C (Optimal)</span>
+            <div class="d-flex gap-2">
+                <button class="btn-gold-outline-sm" onclick="alert('Centrifugal casting rig pre-heated.');"><i class="fa-solid fa-gauge-high"></i> Pre-Heat Crucible</button>
+                <button class="btn-gold-sm" onclick="alert('Pour logged in atelier foundry records.');"><i class="fa-solid fa-fire"></i> Initiate Centrifugal Pour</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

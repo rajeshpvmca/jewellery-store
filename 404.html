@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>404 - Jewel Not Found | Maison Stackly Fine Jewellery</title>
+  <meta name="description" content="The page you requested is sealed within the Mayfair vault. Return to Maison Stackly Fine Jewellery home.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="assets/images/logoStackly.webp">
+
+  <!-- Fonts & CDN Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/404.css">
+</head>
+<body>
+
+  <div class="error-page-wrapper">
+    <div class="error-content-box">
+      
+      <!-- Logo -->
+      <a href="index.html" class="d-inline-block mb-3" aria-label="Maison Stackly Home">
+        <img src="assets/images/logoStackly.webp" alt="Stackly Fine Jewellery" height="42" onerror="this.onerror=null; this.src='assets/images/logoStackly.webp';">
+      </a>
+
+      <!-- Diamond Icon & 404 Code -->
+      <div class="error-diamond-icon">
+        <i class="fa-solid fa-gem"></i>
+      </div>
+      <div class="error-code">404</div>
+      <h1 class="error-title">Sealed in the Vault</h1>
+      <p class="error-desc">
+        The archive page, bespoke catalog entry, or rare monograph you are seeking is either currently resting in our subterranean vault or has been acquired by a private collector.
+      </p>
+
+      <!-- Action Buttons: Home & Go Back -->
+      <div class="error-action-btns mb-4">
+        <a href="index.html" class="btn btn-gold">
+          <i class="fa-solid fa-house me-2"></i>
+          <span>RETURN TO HOME</span>
+        </a>
+        <button onclick="history.back()" class="btn btn-outline-gold" type="button">
+          <i class="fa-solid fa-arrow-left me-2"></i>
+          <span>GO BACK PREVIOUS</span>
+        </button>
+      </div>
+
+      <!-- Quick Links Strip -->
+      <div class="pt-3 border-top border-secondary border-opacity-25">
+        <span class="small text-white-50 d-block mb-2">Explore Our Collections &amp; Atelier:</span>
+        <div class="d-flex justify-content-center gap-3 flex-wrap small">
+          <a href="collections.html" class="text-gold text-decoration-none">High Jewellery</a>
+          <span class="text-white-50">&bull;</span>
+          <a href="services.html" class="text-gold text-decoration-none">Bespoke Commissions</a>
+          <span class="text-white-50">&bull;</span>
+          <a href="craftsmanship.html" class="text-gold text-decoration-none">Mayfair Craftsmanship</a>
+          <span class="text-white-50">&bull;</span>
+          <a href="contact.html" class="text-gold text-decoration-none">Private Appointment</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+/* ===================================================================
+   STACKLY FINE JEWELLERY - CONTACT PAGE STYLES
+   File: contact.css
+   Non-repeated styles specific to contact.html
+=================================================================== */
+
+/* Contact Cards Grid */
+.contact-info-card {
+  background: #121217;
+  border: 1px solid rgba(197, 168, 128, 0.2);
+  border-radius: 8px;
+  padding: 32px 24px;
+  text-align: center;
+  height: 100%;
+  transition: var(--transition-smooth);
+}
+
+.contact-info-card:hover {
+  border-color: var(--color-gold);
+  background: #16161f;
+  transform: translateY(-5px);
+}
+
+.contact-icon-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: rgba(197, 168, 128, 0.12);
+  border: 1px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  font-size: 1.4rem;
+  margin: 0 auto 1.25rem;
+}
+
+/* Appointment Form Card */
+.appointment-card-wrapper {
+  background: linear-gradient(145deg, #16161e 0%, #101014 100%);
+  border: 1px solid rgba(197, 168, 128, 0.25);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: var(--box-shadow-luxury);
+}
+
+/* Styled Map Container */
+.mayfair-map-wrap {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(197, 168, 128, 0.25);
+  height: 420px;
+  box-shadow: var(--box-shadow-luxury);
+}
+
+.mayfair-map-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(90%) invert(90%) contrast(120%);
+}
+
+/* WhatsApp Immediate Concierge Strip */
+.whatsapp-concierge-strip {
+  background: linear-gradient(135deg, #111a14 0%, #0c120e 100%);
+  border: 1px solid rgba(37, 211, 102, 0.3);
+  border-radius: 10px;
+  padding: 30px;
+}

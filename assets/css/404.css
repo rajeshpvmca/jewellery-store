@@ -1,0 +1,72 @@
+/* ===================================================================
+   STACKLY FINE JEWELLERY - 404 PAGE STYLES
+   File: 404.css
+   Non-repeated styles specific to 404.html
+=================================================================== */
+
+.error-page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: radial-gradient(circle at center, rgba(35, 30, 22, 0.7) 0%, rgba(8, 8, 10, 0.98) 75%),
+              #08080a;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.error-content-box {
+  max-width: 650px;
+  background: linear-gradient(145deg, #15151e 0%, #0f0f13 100%);
+  border: 1px solid rgba(197, 168, 128, 0.28);
+  border-radius: 12px;
+  padding: 50px 36px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7), 0 0 30px rgba(197, 168, 128, 0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.error-diamond-icon {
+  font-size: 3.5rem;
+  color: var(--color-gold);
+  margin-bottom: 1.25rem;
+  filter: drop-shadow(0 0 16px rgba(197, 168, 128, 0.5));
+  animation: diamondFloat 3s ease-in-out infinite alternate;
+}
+
+@keyframes diamondFloat {
+  0% { transform: translateY(-4px) rotate(-3deg); }
+  100% { transform: translateY(4px) rotate(3deg); }
+}
+
+.error-code {
+  font-family: var(--font-serif);
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.error-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--color-gold-light);
+  margin-bottom: 1rem;
+}
+
+.error-desc {
+  font-size: 1rem;
+  color: #a8a7b0;
+  margin-bottom: 2rem;
+}
+
+.error-action-btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

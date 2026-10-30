@@ -1,0 +1,139 @@
+
+<header class="site-header fixed-top" id="site-header-nav">
+
+  <!-- Main Navigation Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark main-navbar py-2 py-lg-3" aria-label="Main Maison Navigation">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      
+      <!-- Brand Logo -->
+      <a class="navbar-brand header-brand d-inline-flex align-items-center py-0" href="index.html" aria-label="Stackly Fine Jewellery">
+        <img src="assets/images/logoStackly.webp" alt="Stackly Fine Jewellery" class="header-logo img-fluid" height="35" style="filter: brightness(0) saturate(100%) invert(74%) sepia(35%) saturate(464%) hue-rotate(4deg) brightness(93%) contrast(87%);" onerror="this.onerror=null; this.src='assets/images/logoStackly.webp';">
+
+      </a>
+
+      <!-- Desktop Navigation Links (Centered) -->
+      <div class="collapse navbar-collapse d-none d-lg-flex justify-content-center header-desktop-nav" id="desktopNavbarNav">
+        <ul class="navbar-nav align-items-center gap-1 gap-xl-3 gap-xxl-4 mb-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="collections.html">COLLECTIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="craftsmanship.html">CRAFTSMANSHIP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="journal.html">JOURNAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Desktop Right Actions (Login / Sign Up / Book CTA) -->
+      <div class="header-desktop-actions header-actions d-none d-lg-flex align-items-center gap-2 gap-xl-3">
+        <a href="login.html" class="btn-header-outline">LOGIN</a>
+        <a href="register.html" class="btn-header-gold">SIGN UP</a>
+      </div>
+
+      <!-- Mobile Luxury Circular Toggle Button (Replaces deformed toggle) -->
+      <button class="navbar-toggler luxury-toggle-btn border-0 shadow-none p-0 d-lg-none" 
+              type="button" 
+              id="mobileMenuToggleBtn" 
+              aria-label="Open navigation menu" 
+              aria-controls="fullscreenCoverMenu" 
+              aria-expanded="false">
+        <span class="toggle-btn-circle">
+          <i class="fa-solid fa-bars-staggered toggle-icon-open text-gold"></i>
+          <i class="fa-solid fa-xmark toggle-icon-close text-gold"></i>
+        </span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ===================================================================
+       FULLSCREEN DISPLAY COVER MENU (COVERS 100% DISPLAY WHEN OPENED)
+       =================================================================== -->
+  <div class="fullscreen-cover-menu" id="fullscreenCoverMenu" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <div class="fullscreen-cover-inner d-flex flex-column justify-content-between h-100 min-vh-100">
+      
+      <!-- Top Bar: Logo & Close Button -->
+      <div class="fullscreen-cover-header d-flex align-items-center justify-content-between px-3 px-sm-4 py-3 border-bottom border-secondary border-opacity-20">
+        <a href="index.html" class="d-inline-flex align-items-center text-decoration-none" aria-label="Stackly Fine Jewellery">
+          <img src="assets/images/logoStackly.webp" alt="Stackly Fine Jewellery" class="header-logo img-fluid" height="32" onerror="this.onerror=null; this.src='assets/images/logoStackly.webp';">
+        </a>
+        <button class="fullscreen-cover-close-btn border-0" type="button" id="fullscreenCoverCloseBtn" aria-label="Close navigation menu">
+          <i class="fa-solid fa-xmark text-gold fs-5"></i>
+        </button>
+      </div>
+
+      <!-- Menu Body: 7 Navigation Links -->
+      <div class="fullscreen-cover-body px-3 px-sm-4 py-3 py-sm-4 flex-grow-1 overflow-y-auto d-flex flex-column justify-content-center">
+        <ul class="fullscreen-nav-list list-unstyled mb-0">
+          <li class="fullscreen-nav-item">
+            <a href="index.html" class="fullscreen-nav-link">
+              <span class="nav-title">HOME</span>
+            </a>
+          </li>
+          <li class="fullscreen-nav-item">
+            <a href="about.html" class="fullscreen-nav-link">
+              <span class="nav-title">ABOUT</span>
+            </a>
+          </li>
+          <li class="fullscreen-nav-item">
+            <a href="collections.html" class="fullscreen-nav-link">
+              <span class="nav-title">COLLECTIONS</span>
+            </a>
+          </li>
+          <li class="fullscreen-nav-item">
+            <a href="services.html" class="fullscreen-nav-link">
+              <span class="nav-title">SERVICES</span>
+            </a>
+          </li>
+          <li class="fullscreen-nav-item">
+            <a href="craftsmanship.html" class="fullscreen-nav-link">
+              <span class="nav-title">CRAFTSMANSHIP</span>
+            </a>
+          </li>
+          <li class="fullscreen-nav-item">
+            <a href="journal.html" class="fullscreen-nav-link">
+              <span class="nav-title">JOURNAL</span>
+            </a>
+          </li>
+          <li class="fullscreen-nav-item">
+            <a href="contact.html" class="fullscreen-nav-link">
+              <span class="nav-title">CONTACT</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Footer Bar: CTAs, Contact Phone & Social Links -->
+      <div class="fullscreen-cover-footer px-3 px-sm-4 py-3 border-top border-secondary border-opacity-20 bg-black bg-opacity-40">
+        <!-- Auth & Appointment Buttons -->
+        <div class="row g-2 mb-3">
+          <div class="col-6">
+            <a href="login.html" class="btn btn-outline-gold w-100 py-2 text-center text-uppercase fs-7">LOGIN</a>
+          </div>
+          <div class="col-6">
+            <a href="register.html" class="btn btn-gold w-100 py-2 text-center text-uppercase fs-7">SIGN UP</a>
+          </div>
+         
+        </div>
+
+        
+      </div>
+
+    </div>
+  </div>
+
+</header>

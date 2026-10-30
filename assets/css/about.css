@@ -1,0 +1,206 @@
+/* ===================================================================
+   STACKLY FINE JEWELLERY - ABOUT PAGE STYLES
+   File: about.css
+   Non-repeated styles specific to about.html
+=================================================================== */
+
+/* Heritage Story Section */
+.heritage-story-section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.heritage-img-composition {
+  position: relative;
+  padding: 20px 20px 40px 0;
+}
+
+.heritage-main-img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(197, 168, 128, 0.25);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+}
+
+.heritage-floating-stamp {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  background: #15151c;
+  border: 2px solid var(--color-gold);
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.heritage-stamp-year {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  color: var(--color-gold);
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* 4 Pillars Section */
+.pillar-card {
+  background: #111116;
+  border: 1px solid rgba(197, 168, 128, 0.15);
+  border-radius: 8px;
+  padding: 32px 24px;
+  height: 100%;
+  transition: var(--transition-smooth);
+}
+
+.pillar-card:hover {
+  border-color: var(--color-gold);
+  background: #16161f;
+  transform: translateY(-6px);
+}
+
+.pillar-icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(197, 168, 128, 0.12);
+  border: 1px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Master Craftsmen Team */
+.craftsman-card {
+  background: #121217;
+  border: 1px solid rgba(197, 168, 128, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.craftsman-card:hover {
+  border-color: var(--color-gold);
+  transform: translateY(-5px);
+}
+
+.craftsman-img-wrap {
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+
+.craftsman-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.craftsman-card:hover .craftsman-img-wrap img {
+  transform: scale(1.05);
+}
+
+.craftsman-info {
+  padding: 20px;
+}
+
+.craftsman-role {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: var(--color-gold);
+  text-transform: uppercase;
+}
+
+/* Interactive Legacy Timeline */
+.timeline-section {
+  padding: 80px 0;
+  background: #0d0d10;
+}
+
+.legacy-timeline {
+  position: relative;
+  padding: 30px 0;
+}
+
+.legacy-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: rgba(197, 168, 128, 0.25);
+  transform: translateX(-50%);
+}
+
+.timeline-milestone {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.milestone-box {
+  background: #131318;
+  border: 1px solid rgba(197, 168, 128, 0.2);
+  border-radius: 8px;
+  padding: 24px;
+  position: relative;
+  transition: var(--transition-fast);
+}
+
+.milestone-box:hover {
+  border-color: var(--color-gold);
+}
+
+.milestone-year {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--color-gold);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Stat Counters */
+.stat-box {
+  background: #121217;
+  border: 1px solid rgba(197, 168, 128, 0.18);
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: var(--transition-fast);
+}
+
+.stat-box:hover {
+  border-color: var(--color-gold);
+}
+
+.stat-number {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  color: var(--color-gold);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #bfbec5;
+}
+
+/* Responsive adjustment for timeline */
+@media (max-width: 767.98px) {
+  .legacy-timeline::before {
+    left: 20px;
+  }
+  .timeline-milestone {
+    padding-left: 45px;
+  }
+}

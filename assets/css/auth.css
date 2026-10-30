@@ -1,0 +1,511 @@
+/* ===================================================================
+   STACKLY FINE JEWELLERY - HAUTE JOAILLERIE AUTHENTICATION STYLES
+   File: assets/css/auth.css
+   Shared between login.html and register.html
+   Full device & 320px ultra-small responsive support
+=================================================================== */
+
+:root {
+  --auth-gold: #c5a880;
+  --auth-gold-light: #dfcaa7;
+  --auth-gold-dark: #9e7d4e;
+  --auth-gold-gradient: linear-gradient(135deg, #dfcaa7 0%, #c5a880 50%, #9e7d4e 100%);
+  --auth-bg-dark: #07070a;
+  --auth-card-bg: #111117;
+  --auth-input-bg: #0d0d12;
+  --auth-border-gold: rgba(197, 168, 128, 0.25);
+  --auth-border-gold-focus: rgba(197, 168, 128, 0.6);
+}
+
+body.auth-page {
+  background-color: var(--auth-bg-dark);
+  color: #ffffff;
+  font-family: var(--font-sans, 'Montserrat', sans-serif);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------
+   LEFT: HIGH JEWELLERY HERO BANNER (Desktop >= 992px)
+-------------------------------------------------- */
+.auth-banner {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+  border-right: 1px solid var(--auth-border-gold);
+}
+
+.auth-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    145deg,
+    rgba(7, 7, 10, 0.92) 0%,
+    rgba(14, 14, 20, 0.75) 45%,
+    rgba(7, 7, 10, 0.95) 100%
+  );
+  z-index: 1;
+}
+
+.auth-banner-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 44px;
+}
+
+.auth-banner-logo img {
+  height: 44px;
+  width: auto;
+  filter: brightness(0) saturate(100%) invert(74%) sepia(35%) saturate(464%) hue-rotate(4deg) brightness(93%) contrast(87%);
+  transition: opacity 0.3s ease;
+}
+
+.auth-banner-logo:hover img {
+  opacity: 0.85;
+}
+
+.auth-banner-headline {
+  font-family: var(--font-serif, 'Cinzel', serif);
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+  line-height: 1.25;
+}
+
+.auth-banner-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.98rem;
+  line-height: 1.8;
+  max-width: 440px;
+}
+
+.auth-trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(197, 168, 128, 0.18);
+}
+
+.auth-trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--auth-gold-light);
+}
+
+/* --------------------------------------------------
+   RIGHT: FORM CONTAINER & CARD
+-------------------------------------------------- */
+.auth-form-side {
+  background-color: var(--auth-bg-dark);
+  background-image: radial-gradient(rgba(197, 168, 128, 0.16) 1.2px, transparent 1.2px);
+  background-size: 26px 26px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 18px;
+}
+
+.auth-form-card {
+  width: 100%;
+  max-width: 490px;
+  background: var(--auth-card-bg);
+  border: 1px solid var(--auth-border-gold);
+  border-radius: 12px;
+  padding: 38px 34px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.75), 0 0 30px rgba(197, 168, 128, 0.08);
+  position: relative;
+  z-index: 2;
+}
+
+.auth-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--auth-gold);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  transition: all 0.25s ease;
+}
+
+.auth-back-link:hover {
+  color: #ffffff;
+  transform: translateX(-3px);
+}
+
+.auth-form-header {
+  text-align: center;
+  margin-bottom: 26px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+.auth-mobile-logo img {
+  height: 38px;
+  filter: brightness(0) saturate(100%) invert(74%) sepia(35%) saturate(464%) hue-rotate(4deg) brightness(93%) contrast(87%);
+}
+
+.auth-form-title {
+  font-family: var(--font-serif, 'Cinzel', serif);
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.auth-form-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.88rem;
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------
+   ROLE SELECTION CARDS (JEWELLERY STORE ROLES)
+-------------------------------------------------- */
+.role-section-label {
+  font-size: 0.72rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--auth-gold);
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.role-card-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.role-card-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 6px;
+  background: #15151e;
+  border: 1px solid var(--auth-border-gold);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-align: center;
+  user-select: none;
+  min-height: 68px;
+}
+
+.role-card-label i {
+  font-size: 1.15rem;
+  color: var(--auth-gold);
+  margin-bottom: 5px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.role-card-label:hover {
+  border-color: var(--auth-gold);
+  background: #1b1b26;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.role-card-input:checked + .role-card-label {
+  border-color: var(--auth-gold);
+  background: rgba(197, 168, 128, 0.15);
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(197, 168, 128, 0.25);
+}
+
+.role-card-input:checked + .role-card-label i {
+  color: var(--auth-gold-light);
+  transform: scale(1.15);
+}
+
+/* --------------------------------------------------
+   INPUT FIELDS & ICONS
+-------------------------------------------------- */
+.auth-field-label {
+  font-size: 0.72rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--auth-gold);
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.custom-input {
+  background-color: var(--auth-input-bg) !important;
+  border: 1px solid var(--auth-border-gold) !important;
+  color: #ffffff !important;
+  font-size: 0.9rem !important;
+  padding: 11px 14px 11px 42px !important;
+  border-radius: 8px !important;
+  transition: all 0.25s ease !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
+
+.custom-input::placeholder {
+  color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.custom-input:focus {
+  border-color: var(--auth-gold) !important;
+  box-shadow: 0 0 12px rgba(197, 168, 128, 0.32) !important;
+  background-color: #121219 !important;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--auth-gold);
+  font-size: 0.95rem;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: var(--auth-gold);
+  font-size: 0.95rem;
+  padding: 4px;
+  cursor: pointer;
+  z-index: 4;
+  transition: color 0.2s ease;
+}
+
+.toggle-password:hover {
+  color: #ffffff;
+}
+
+/* --------------------------------------------------
+   PASSWORD STRENGTH METER (GOLD ACCENTS)
+-------------------------------------------------- */
+.password-strength-meter {
+  display: flex;
+  gap: 4px;
+  margin-top: 10px;
+}
+
+.strength-bar {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.strength-bar.active-weak {
+  background-color: #ef4444;
+}
+
+.strength-bar.active-fair {
+  background-color: #eab308;
+}
+
+.strength-bar.active-good {
+  background-color: var(--auth-gold);
+}
+
+.strength-bar.active-strong {
+  background-color: #10b981;
+}
+
+.strength-text {
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
+}
+
+/* --------------------------------------------------
+   CHECKBOX & BUTTONS
+-------------------------------------------------- */
+.form-check-input {
+  background-color: var(--auth-input-bg);
+  border: 1px solid var(--auth-border-gold);
+  accent-color: var(--auth-gold);
+}
+
+.form-check-input:checked {
+  background-color: var(--auth-gold);
+  border-color: var(--auth-gold);
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 8px rgba(197, 168, 128, 0.3);
+  border-color: var(--auth-gold);
+}
+
+.form-check-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  user-select: none;
+}
+
+.btn-auth-gold {
+  background: var(--auth-gold-gradient);
+  color: #0a0a0c;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(197, 168, 128, 0.3);
+  cursor: pointer;
+}
+
+.btn-auth-gold:hover {
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(197, 168, 128, 0.45);
+  color: #000000;
+}
+
+.btn-auth-gold:active {
+  transform: translateY(0);
+}
+
+.auth-switch-text {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.88rem;
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+
+.auth-gold-link {
+  color: var(--auth-gold);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.auth-gold-link:hover {
+  color: var(--auth-gold-light);
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------
+   RESPONSIVENESS & DOWN TO 320PX SUPPORT
+-------------------------------------------------- */
+@media (max-width: 991.98px) {
+  .auth-form-side {
+    padding: 30px 16px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .auth-form-card {
+    padding: 26px 18px;
+    border-radius: 10px;
+  }
+  .auth-form-title {
+    font-size: 1.6rem;
+  }
+  .role-card-label {
+    padding: 8px 4px;
+    font-size: 0.74rem;
+    min-height: 62px;
+  }
+  .role-card-label i {
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+  .custom-input {
+    font-size: 0.86rem !important;
+    padding: 10px 12px 10px 38px !important;
+  }
+  .input-icon {
+    left: 12px;
+    font-size: 0.88rem;
+  }
+}
+
+/* Ultra-small mobile (320px - 360px) */
+@media (max-width: 360px) {
+  .auth-form-side {
+    padding: 20px 10px;
+  }
+  .auth-form-card {
+    padding: 20px 12px;
+  }
+  .auth-form-title {
+    font-size: 1.45rem;
+  }
+  .auth-form-subtitle {
+    font-size: 0.82rem;
+  }
+  .role-section-label,
+  .auth-field-label {
+    font-size: 0.68rem;
+    letter-spacing: 1px;
+  }
+  .role-card-label {
+    padding: 7px 2px;
+    font-size: 0.7rem;
+    min-height: 58px;
+  }
+  .role-card-label i {
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+  }
+  .custom-input {
+    font-size: 0.82rem !important;
+    padding: 9px 10px 9px 34px !important;
+  }
+  .input-icon {
+    left: 10px;
+    font-size: 0.82rem;
+  }
+  .toggle-password {
+    right: 8px;
+    font-size: 0.85rem;
+  }
+  .btn-auth-gold {
+    font-size: 0.82rem;
+    padding: 10px 16px;
+    letter-spacing: 1px;
+  }
+  .form-check-label {
+    font-size: 0.78rem;
+  }
+  .auth-switch-text {
+    font-size: 0.8rem;
+  }
+}

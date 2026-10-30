@@ -1,0 +1,78 @@
+/* ===================================================================
+   STACKLY FINE JEWELLERY - CRAFTSMANSHIP PAGE STYLES
+   File: craftsmanship.css
+   Non-repeated styles specific to craftsmanship.html
+=================================================================== */
+
+/* Setting Technique Cards */
+.setting-technique-card {
+  background: #121217;
+  border: 1px solid rgba(197, 168, 128, 0.18);
+  border-radius: 8px;
+  padding: 28px 24px;
+  height: 100%;
+  transition: var(--transition-smooth);
+}
+
+.setting-technique-card:hover {
+  border-color: var(--color-gold);
+  background: #171720;
+  transform: translateY(-5px);
+}
+
+.setting-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(197, 168, 128, 0.1);
+  border: 1px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Hallmark Stamp Visualizer */
+.hallmark-stamp-container {
+  background: #131318;
+  border: 1px solid rgba(197, 168, 128, 0.25);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.hallmark-mark-box {
+  background: #0d0d10;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px 14px;
+  text-align: center;
+  transition: var(--transition-fast);
+}
+
+.hallmark-mark-box:hover {
+  border-color: var(--color-gold);
+  transform: translateY(-3px);
+}
+
+.hallmark-icon {
+  font-size: 2rem;
+  color: var(--color-gold);
+  margin-bottom: 0.8rem;
+}
+
+/* Cut Geometry Grid */
+.facet-cut-card {
+  background: #111116;
+  border: 1px solid rgba(197, 168, 128, 0.15);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: var(--transition-fast);
+}
+
+.facet-cut-card:hover {
+  border-color: var(--color-gold);
+  background: #16161f;
+}

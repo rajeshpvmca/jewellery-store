@@ -1,0 +1,87 @@
+/* ===================================================================
+   STACKLY FINE JEWELLERY - SERVICES PAGE STYLES
+   File: services.css
+   Non-repeated styles specific to services.html
+=================================================================== */
+
+/* Service Feature Card */
+.service-feature-card {
+  background: #121217;
+  border: 1px solid rgba(197, 168, 128, 0.18);
+  border-radius: 8px;
+  padding: 32px 28px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.service-feature-card:hover {
+  border-color: var(--color-gold);
+  background: #16161f;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+}
+
+.service-icon-wrap {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(197, 168, 128, 0.1);
+  border: 1px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Service Process Breakdown */
+.process-step-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #181820;
+  border: 1px solid rgba(197, 168, 128, 0.25);
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  color: var(--color-gold-light);
+  margin-bottom: 1rem;
+}
+
+/* FAQ Accordion Luxury Styling */
+.luxury-accordion .accordion-item {
+  background: #121217;
+  border: 1px solid rgba(197, 168, 128, 0.18);
+  border-radius: 6px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.luxury-accordion .accordion-button {
+  background: #121217;
+  color: #ffffff;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  padding: 18px 24px;
+  box-shadow: none;
+}
+
+.luxury-accordion .accordion-button:not(.collapsed) {
+  background: #16161e;
+  color: var(--color-gold);
+  border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+}
+
+.luxury-accordion .accordion-button::after {
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(5deg);
+}
+
+.luxury-accordion .accordion-body {
+  color: #bfbfc7;
+  padding: 20px 24px;
+  font-size: 0.95rem;
+  background: #14141a;
+}

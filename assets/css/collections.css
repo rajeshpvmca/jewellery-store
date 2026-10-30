@@ -1,0 +1,108 @@
+/* ===================================================================
+   STACKLY FINE JEWELLERY - COLLECTIONS PAGE STYLES
+   File: collections.css
+   Non-repeated styles specific to collections.html
+=================================================================== */
+
+/* Category Filter Bar */
+.collection-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.filter-pill-btn {
+  background: #131317;
+  border: 1px solid rgba(197, 168, 128, 0.2);
+  color: #bfbec5;
+  font-size: 0.82rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.filter-pill-btn:hover,
+.filter-pill-btn.active {
+  background: var(--color-gold);
+  color: #0c0c0e;
+  border-color: var(--color-gold);
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(197, 168, 128, 0.3);
+}
+
+/* Collection Feature Spotlight */
+.collection-spotlight-card {
+  position: relative;
+  background: #131318;
+  border: 1px solid rgba(197, 168, 128, 0.22);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow-luxury);
+}
+
+.spotlight-img-wrap {
+  position: relative;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+
+.spotlight-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.collection-spotlight-card:hover .spotlight-img-wrap img {
+  transform: scale(1.05);
+}
+
+/* Metal Comparison Matrix */
+.metal-guide-box {
+  background: #121217;
+  border: 1px solid rgba(197, 168, 128, 0.2);
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  height: 100%;
+  transition: var(--transition-fast);
+}
+
+.metal-guide-box:hover {
+  border-color: var(--color-gold);
+  transform: translateY(-4px);
+}
+
+.metal-sample-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #000;
+}
+
+.metal-platinum {
+  background: linear-gradient(135deg, #e5e5eb 0%, #b8b8c2 100%);
+}
+
+.metal-yellow-gold {
+  background: linear-gradient(135deg, #fce09c 0%, #d4af37 100%);
+}
+
+.metal-rose-gold {
+  background: linear-gradient(135deg, #f7c3b2 0%, #c97d6d 100%);
+}
+
+.metal-white-gold {
+  background: linear-gradient(135deg, #f4f4f6 0%, #cfcfe0 100%);
+}

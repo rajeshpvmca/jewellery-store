@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Vault & Catalog | Maison Stackly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+<body class="dash-subpage">
+
+    <div class="subpage-header">
+        <div>
+            <h1 class="subpage-title">Master Gem Vault &amp; Catalog Management</h1>
+            <p class="subpage-subtitle">Master inventory across Mayfair London &amp; Salem flagship vaults, calibrated pricing, and bullion controls.</p>
+        </div>
+        <button class="btn-gold-sm" onclick="alert('Open registration modal for new Master High Jewellery Piece.');">
+            <i class="fa-solid fa-plus"></i> Add Master Piece
+        </button>
+    </div>
+
+    <!-- Bullion & Spot Pricing Tracker -->
+    <div class="row g-3 mb-4">
+        <div class="col-6 col-md-3">
+            <div class="dash-stat-card">
+                <span class="dash-stat-label">Gold Spot (LBMA)</span>
+                <div class="dash-stat-val">£58.42 / g</div>
+                <div class="dash-stat-meta text-success"><i class="fa-solid fa-arrow-trend-up me-1"></i> +0.8% London AM</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="dash-stat-card">
+                <span class="dash-stat-label">Platinum Spot</span>
+                <div class="dash-stat-val">£24.90 / g</div>
+                <div class="dash-stat-meta text-white-50">950 Assay Basis</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="dash-stat-card">
+                <span class="dash-stat-label">Catalog Master Pieces</span>
+                <div class="dash-stat-val">68 Creations</div>
+                <div class="dash-stat-meta text-gold">42 Available &bull; 26 Reserved</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="dash-stat-card">
+                <span class="dash-stat-label">Total Vault Valuation</span>
+                <div class="dash-stat-val">£8,950,000</div>
+                <div class="dash-stat-meta text-gold">Lloyd's Insured Vaults</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Master Inventory Table -->
+    <div class="dash-panel-card">
+        <div class="dash-panel-header">
+            <h3 class="dash-panel-title"><i class="fa-solid fa-vault text-gold"></i> Master High Jewellery Collection Ledger</h3>
+            <div class="d-flex gap-2">
+                <input type="text" class="form-control form-control-luxury py-1 px-3" placeholder="Search piece, certificate, or gem..." style="font-size: 0.82rem; width: 220px;">
+            </div>
+        </div>
+
+        <div class="table-responsive-luxury">
+            <table class="table-luxury">
+                <thead>
+                    <tr>
+                        <th>SKU / Piece Name</th>
+                        <th>Category</th>
+                        <th>Primary Stones</th>
+                        <th>Precious Metal</th>
+                        <th>Retail Price</th>
+                        <th>Vault Location</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <strong class="text-white d-block">The Kensington Oval Pavé</strong>
+                            <span class="text-white-50 small">SKU: STK-RING-01</span>
+                        </td>
+                        <td>Solitaire Rings</td>
+                        <td>2.85ct Oval D / VVS1</td>
+                        <td>Platinum 950</td>
+                        <td class="text-gold fw-bold">£28,900</td>
+                        <td>London Mayfair Safe A</td>
+                        <td><span class="badge-blue">In Production</span></td>
+                        <td><button class="btn-gold-sm py-1 px-2" style="font-size: 0.72rem;" onclick="alert('Editing specifications for Kensington Oval...');">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong class="text-white d-block">The Ceylon Royal Blue Halo</strong>
+                            <span class="text-white-50 small">SKU: STK-PEND-04</span>
+                        </td>
+                        <td>Pendants</td>
+                        <td>8.40ct Cushion Sapphire</td>
+                        <td>18K Mayfair Gold</td>
+                        <td class="text-gold fw-bold">£52,000</td>
+                        <td>Salem Flagship Safe 01</td>
+                        <td><span class="badge-green">Available</span></td>
+                        <td><button class="btn-gold-sm py-1 px-2" style="font-size: 0.72rem;" onclick="alert('Editing specifications for Ceylon Halo...');">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong class="text-white d-block">The Sovereign Rivière Line</strong>
+                            <span class="text-white-50 small">SKU: STK-BRAC-02</span>
+                        </td>
+                        <td>Tennis Bracelets</td>
+                        <td>54 Matched D-Flawless (14.2ct)</td>
+                        <td>Platinum 950</td>
+                        <td class="text-gold fw-bold">£38,500</td>
+                        <td>London Mayfair Safe B</td>
+                        <td><span class="badge-green">Available</span></td>
+                        <td><button class="btn-gold-sm py-1 px-2" style="font-size: 0.72rem;" onclick="alert('Editing specifications for Riviera Line...');">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong class="text-white d-block">The Duchess Pink Sapphire Drops</strong>
+                            <span class="text-white-50 small">SKU: STK-EARR-08</span>
+                        </td>
+                        <td>Earrings</td>
+                        <td>Madagascar Pink Sapphires 5.1ct</td>
+                        <td>18K Rose Gold</td>
+                        <td class="text-gold fw-bold">£26,400</td>
+                        <td>London Mayfair Safe A</td>
+                        <td><span class="badge-green">Available</span></td>
+                        <td><button class="btn-gold-sm py-1 px-2" style="font-size: 0.72rem;" onclick="alert('Editing specifications for Pink Sapphire Drops...');">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong class="text-white d-block">Swiss Royal Date Luxury Timepiece</strong>
+                            <span class="text-white-50 small">SKU: STK-TIME-12</span>
+                        </td>
+                        <td>Haute Horlogerie</td>
+                        <td>Champagne Diamond Dial</td>
+                        <td>18K Two-Tone Jubilee</td>
+                        <td class="text-gold fw-bold">£31,200</td>
+                        <td>Geneva Partner Vault</td>
+                        <td><span class="badge-gold">On Loan</span></td>
+                        <td><button class="btn-gold-sm py-1 px-2" style="font-size: 0.72rem;" onclick="alert('Checking consignment agreement...');">Inspect</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

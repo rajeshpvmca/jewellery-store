@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Pipeline | Maison Stackly</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+</head>
+<body class="dash-subpage">
+
+    <div class="subpage-header">
+        <div>
+            <h1 class="subpage-title">Global Commission &amp; Order Pipeline</h1>
+            <p class="subpage-subtitle">Track and manage bespoke atelier workflows from initial design CAD to armored vault dispatch.</p>
+        </div>
+        <button class="btn-gold-sm" onclick="alert('Creating bespoke high jewellery commission record...');">
+            <i class="fa-solid fa-plus"></i> Create Commission
+        </button>
+    </div>
+
+    <!-- Pipeline Stats Bar -->
+    <div class="row g-3 mb-4">
+        <div class="col-6 col-md-3">
+            <div class="dash-stat-card">
+                <span class="dash-stat-label">In Production</span>
+                <div class="dash-stat-val">14 Pieces</div>
+                <div class="dash-stat-meta text-gold">Atelier Bench Stations</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="dash-stat-card">
+                <span class="dash-stat-label">London Assay</span>
+                <div class="dash-stat-val">6 Pieces</div>
+                <div class="dash-stat-meta text-white-50">Goldsmiths' Hall London</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="dash-stat-card">
+                <span class="dash-stat-label">Armed Courier Transit</span>
+                <div class="dash-stat-val">4 Shipments</div>
+                <div class="dash-stat-meta text-gold">Ferrari / G4S Armored</div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="dash-stat-card">
+                <span class="dash-stat-label">Delivered This Month</span>
+                <div class="dash-stat-val">38 Pieces</div>
+                <div class="dash-stat-meta text-success">100% Satisfaction</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Orders Filter & Table -->
+    <div class="dash-panel-card">
+        <div class="dash-panel-header">
+            <h3 class="dash-panel-title"><i class="fa-solid fa-gem text-gold"></i> Active Haute Joaillerie Commissions</h3>
+            <div class="d-flex gap-2 flex-wrap">
+                <button class="btn-gold-sm py-1 px-3" style="font-size: 0.75rem;">All (24)</button>
+                <button class="btn-gold-outline-sm py-1 px-3" style="font-size: 0.75rem;">Bench (14)</button>
+                <button class="btn-gold-outline-sm py-1 px-3" style="font-size: 0.75rem;">Assay (6)</button>
+                <button class="btn-gold-outline-sm py-1 px-3" style="font-size: 0.75rem;">Armed Dispatch (4)</button>
+            </div>
+        </div>
+
+        <div class="table-responsive-luxury">
+            <table class="table-luxury">
+                <thead>
+                    <tr>
+                        <th>Commission #</th>
+                        <th>Patron Client</th>
+                        <th>High Jewellery Piece</th>
+                        <th>Metal &amp; Stones</th>
+                        <th>Assigned Jeweller</th>
+                        <th>Amount</th>
+                        <th>Workflow Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-gold fw-semibold">#ORD-9842</td>
+                        <td>Lady Victoria H.</td>
+                        <td>The Sovereign Emerald Collier</td>
+                        <td>Platinum 950 &bull; Muzo 12.4ct</td>
+                        <td>Henri de Mayfair</td>
+                        <td class="text-white fw-bold">£84,000</td>
+                        <td><span class="badge-blue">Prong Setting</span></td>
+                        <td><button class="btn-gold-sm py-1 px-2" style="font-size: 0.72rem;" onclick="alert('Dispatching inspector notes...');">Manage</button></td>
+                    </tr>
+                    <tr>
+                        <td class="text-gold fw-semibold">#ORD-9840</td>
+                        <td>Sir Arthur M.</td>
+                        <td>Fancy Vivid Pink Diamond Ring</td>
+                        <td>18K Rose Gold &bull; 2.10ct Pink</td>
+                        <td>Elena Rostova</td>
+                        <td class="text-white fw-bold">£45,000</td>
+                        <td><span class="badge-purple">London Assay</span></td>
+                        <td><button class="btn-gold-sm py-1 px-2" style="font-size: 0.72rem;" onclick="alert('Viewing Assay Manifest #LND-908...');">Manifest</button></td>
+                    </tr>
+                    <tr>
+                        <td class="text-gold fw-semibold">#ORD-9838</td>
+                        <td>David K. (Collector)</td>
+                        <td>Art Deco Asscher Solitaire</td>
+                        <td>Platinum 950 &bull; 3.50ct Asscher</td>
+                        <td>Julian Vance</td>
+                        <td class="text-white fw-bold">£32,000</td>
+                        <td><span class="badge-green">Velvet Box Sealed</span></td>
+                        <td><button class="btn-gold-sm py-1 px-2" style="font-size: 0.72rem;" onclick="alert('Armored courier booked with Ferrari Logistics.');">Authorize</button></td>
+                    </tr>
+                    <tr>
+                        <td class="text-gold fw-semibold">#ORD-9821</td>
+                        <td>Alexander Vance</td>
+                        <td>The Kensington Oval Pavé Ring</td>
+                        <td>Platinum 950 &bull; 2.85ct Oval</td>
+                        <td>Henri de Mayfair</td>
+                        <td class="text-white fw-bold">£28,900</td>
+                        <td><span class="badge-purple">London Assay</span></td>
+                        <td><button class="btn-gold-sm py-1 px-2" style="font-size: 0.72rem;" onclick="alert('Opening client dossier...');">Manage</button></td>
+                    </tr>
+                    <tr>
+                        <td class="text-gold fw-semibold">#ORD-9810</td>
+                        <td>Countess Beatrice</td>
+                        <td>Ceylon Cushion Sapphire Suite</td>
+                        <td>18K Yellow &bull; 14.8ct Sapphire</td>
+                        <td>Marcus Aurel</td>
+                        <td class="text-white fw-bold">£96,000</td>
+                        <td><span class="badge-blue">Lost-Wax Pouring</span></td>
+                        <td><button class="btn-gold-sm py-1 px-2" style="font-size: 0.72rem;" onclick="alert('Pour scheduled for 14:00 today.');">Manage</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
